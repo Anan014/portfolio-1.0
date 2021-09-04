@@ -1,0 +1,32 @@
+.div-space {
+    width: 100%;
+    height: 2rem;
+    background: var(--container-color);
+    margin: 0;
+    padding: 0;
+    color: var(--primary-text);
+}
+
+.article-1 {
+    width: 100%;
+    height: auto;
+    background: var(--container-color);
+    margin: 0;
+    padding: 0;
+    color: var(--primary-text);
+}
+
+.article-1 .sub-title {
+    height: var(--sub-titles-height);
+    display: flex;
+    align-items: center;
+    padding-left: var(--div-padding-sides);
+}
+
+.article-1 .sub-title h2 {
+    border-bottom: var(--btn-border-color) 2px solid;
+}
+
+.article-1 .desc-container {
+    padding: 2rem var(--div-padding-sides);
+}
