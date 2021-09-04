@@ -55,8 +55,14 @@
     padding-bottom: 3px;
 }
 
-.skill-container .htmlcss {
+.html {
     width: 100%;
+    background-color: var(--btn-border-color);
+    border-radius: 20px;
+}
+
+.css {
+    width: 90%;
     background-color: var(--btn-border-color);
     border-radius: 20px;
 }
