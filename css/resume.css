@@ -7,7 +7,7 @@
     color: var(--primary-text);
 }
 
-.article-1 {
+.coding_skills {
     width: 100%;
     height: auto;
     background: var(--container-color);
@@ -16,17 +16,120 @@
     color: var(--primary-text);
 }
 
-.article-1 .sub-title {
+.coding_skills .sub-title {
     height: var(--sub-titles-height);
     display: flex;
     align-items: center;
     padding-left: var(--div-padding-sides);
+    padding-top: 3rem;
 }
 
-.article-1 .sub-title h2 {
+.coding_skills .sub-title h2 {
     border-bottom: var(--btn-border-color) 2px solid;
 }
 
-.article-1 .desc-container {
+.coding_skills .desc-container {
     padding: 2rem var(--div-padding-sides);
+}
+
+
+/* skills */
+
+.skill-desc {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -0.5rem;
+    color: var(--secondary-text);
+}
+
+.skill-container {
+    width: 100%;
+    background-color: transparent;
+    border: var(--border-color) solid 2px;
+    border-radius: 20px;
+}
+
+.skills {
+    text-align: right;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.skill-container .htmlcss {
+    width: 100%;
+    background-color: var(--btn-border-color);
+    border-radius: 20px;
+}
+
+.js {
+    width: 90%;
+    background-color: var(--btn-border-color);
+    border-radius: 20px;
+}
+
+.reactjs {
+    width: 75%;
+    background-color: var(--btn-border-color);
+    border-radius: 20px;
+}
+
+.nodejs {
+    width: 45%;
+    background-color: var(--btn-border-color);
+    border-radius: 20px;
+}
+
+
+/* design skills */
+
+.design_skills {
+    width: 100%;
+    height: auto;
+    background: var(--container-color);
+    margin: 0;
+    padding: 0;
+    color: var(--primary-text);
+}
+
+.design_skills .sub-title {
+    height: var(--sub-titles-height);
+    display: flex;
+    align-items: center;
+    padding-left: var(--div-padding-sides);
+    padding-top: 3rem;
+}
+
+.design_skills .sub-title h2 {
+    border-bottom: var(--btn-border-color) 2px solid;
+}
+
+.design_skills .desc-container {
+    padding: 2rem var(--div-padding-sides);
+}
+
+
+/* skills */
+
+.skills {
+    text-align: right;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.uiux {
+    width: 90%;
+    background-color: var(--btn-border-color);
+    border-radius: 20px;
+}
+
+.graphic {
+    width: 85%;
+    background-color: var(--btn-border-color);
+    border-radius: 20px;
+}
+
+.logodesign {
+    width: 80%;
+    background-color: var(--btn-border-color);
+    border-radius: 20px;
 }
