@@ -1,3 +1,7 @@
+body {
+    letter-spacing: 0.05rem;
+}
+
 .div-space {
     width: 100%;
     height: 2rem;
@@ -7,6 +11,183 @@
     color: var(--primary-text);
 }
 
+.sub-title {
+    height: var(--sub-titles-height);
+    display: flex;
+    align-items: center;
+    padding-left: var(--div-padding-sides);
+    color: var(--primary-text);
+    padding-top: 3rem;
+}
+
+.sub-title h2 {
+    border-bottom: var(--btn-border-color) 2px solid;
+}
+
+
+/* TimeLine start */
+
+#timeline-content {
+    background: var(--container-color);
+    /* height: auto; */
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Experience */
+
+.grid-timeline {
+    display: grid;
+    grid-template-columns: 0.3fr 2fr;
+    grid-template-rows: /*1fr*/
+    1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: /*"date-date-1 date-desc-1"*/
+    "date-date-2 date-desc-2" "date-date-3 date-desc-3" "date-date-4 date-desc-4" "date-date-5 date-desc-5";
+    padding: 2rem var(--div-padding-sides);
+}
+
+.date-date-box {
+    text-align: left;
+    padding-top: 1rem;
+    border-bottom: dotted 2px var(--border-color);
+    color: var(--secondary-text);
+    border-right: solid 2px var(--btn-border-color);
+}
+
+.date-desc-box {
+    text-align: left;
+    padding: 1rem;
+    border-bottom: dotted 2px var(--border-color);
+    color: var(--secondary-text);
+}
+
+.date-desc-box h3 {
+    color: var(--primary-text);
+}
+
+.date-desc-box h4 {
+    margin-bottom: -0.3rem;
+}
+
+.date-desc-box p {
+    padding-left: 2rem;
+}
+
+
+/* .date-date-1 {
+    grid-area: date-date-1;
+} */
+
+.date-date-2 {
+    grid-area: date-date-2;
+}
+
+.date-date-3 {
+    grid-area: date-date-3;
+}
+
+.date-date-4 {
+    grid-area: date-date-4;
+}
+
+.date-date-5 {
+    grid-area: date-date-5;
+    border-bottom: none;
+}
+
+
+/* .date-desc-1 {
+    grid-area: date-desc-1;
+} */
+
+.date-desc-2 {
+    grid-area: date-desc-2;
+}
+
+.date-desc-3 {
+    grid-area: date-desc-3;
+}
+
+.date-desc-4 {
+    grid-area: date-desc-4;
+}
+
+.date-desc-5 {
+    grid-area: date-desc-5;
+    border-bottom: none;
+}
+
+
+/* Education */
+
+.grid-education {
+    display: grid;
+    grid-template-columns: 0.3fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "date-edu-1 desc-edu-1" "date-edu-2 desc-edu-2" "date-edu-3 desc-edu-3" "date-edu-4 desc-edu-4" "date-edu-5 desc-edu-5" "date-edu-6 desc-edu-6";
+    padding: 2rem var(--div-padding-sides);
+}
+
+.date-edu-1 {
+    grid-area: date-edu-1;
+}
+
+.date-edu-2 {
+    grid-area: date-edu-2;
+}
+
+.date-edu-3 {
+    grid-area: date-edu-3;
+}
+
+.date-edu-4 {
+    grid-area: date-edu-4;
+}
+
+.date-edu-5 {
+    grid-area: date-edu-5;
+}
+
+.date-edu-6 {
+    grid-area: date-edu-6;
+    border-bottom: none;
+}
+
+.desc-edu-1 {
+    grid-area: desc-edu-1;
+}
+
+.desc-edu-2 {
+    grid-area: desc-edu-2;
+}
+
+.desc-edu-3 {
+    grid-area: desc-edu-3;
+}
+
+.desc-edu-4 {
+    grid-area: desc-edu-4;
+}
+
+.desc-edu-5 {
+    grid-area: desc-edu-5;
+}
+
+.desc-edu-6 {
+    grid-area: desc-edu-6;
+    border-bottom: none;
+}
+
+
+/* TimeLine end */
+
 .coding_skills {
     width: 100%;
     height: auto;
@@ -14,18 +195,6 @@
     margin: 0;
     padding: 0;
     color: var(--primary-text);
-}
-
-.coding_skills .sub-title {
-    height: var(--sub-titles-height);
-    display: flex;
-    align-items: center;
-    padding-left: var(--div-padding-sides);
-    padding-top: 3rem;
-}
-
-.coding_skills .sub-title h2 {
-    border-bottom: var(--btn-border-color) 2px solid;
 }
 
 .coding_skills .desc-container {
@@ -97,18 +266,6 @@
     color: var(--primary-text);
 }
 
-.design_skills .sub-title {
-    height: var(--sub-titles-height);
-    display: flex;
-    align-items: center;
-    padding-left: var(--div-padding-sides);
-    padding-top: 3rem;
-}
-
-.design_skills .sub-title h2 {
-    border-bottom: var(--btn-border-color) 2px solid;
-}
-
 .design_skills .desc-container {
     padding: 2rem var(--div-padding-sides);
 }
@@ -135,6 +292,12 @@
 }
 
 .logodesign {
+    width: 80%;
+    background-color: var(--btn-border-color);
+    border-radius: 20px;
+}
+
+.flyerdesign {
     width: 80%;
     background-color: var(--btn-border-color);
     border-radius: 20px;
