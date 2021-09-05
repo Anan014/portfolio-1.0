@@ -41,53 +41,109 @@
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas: "area-1-1 area-1-2" "area-2-1 area-2-2" "area-3-1 area-3-2";
-    display: flex;
+    /* display: flex; */
+    grid-gap: 1rem;
 }
 
 .area-box {
-    /* width: 356px;
-    height: 217px; */
-    border-radius: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    border-bottom: dotted 2px var(--border-color);
-}
-
-.area-1-1 {
-    grid-area: area-1-1;
+    padding-bottom: 2rem;
 }
 
 .area-box p {
     margin-top: 0;
     line-height: 1rem;
     color: var(--secondary-text);
+    width: 356px;
+}
+
+.area-box a {
+    text-decoration: none;
+    text-align: center;
+    color: var(--primary-text);
+}
+
+.grid-protfolio-img {
+    width: 356px;
+    height: 217px;
+    border-radius: 15px;
+}
+
+.area-1-1 {
+    grid-area: area-1-1;
 }
 
 .area-1-1 .grid-protfolio-img {
     background: url("../clients-proj/fireless_website.jpg") center center/cover no-repeat;
-    width: 356px;
-    height: 217px;
-    border-radius: 15px;
 }
 
 .area-1-2 {
     grid-area: area-1-2;
 }
 
+.area-1-2 .grid-protfolio-img {
+    background: url("../clients-proj/ngw_website.jpg") center center/cover no-repeat;
+}
+
 .area-2-1 {
     grid-area: area-2-1;
+}
+
+.area-2-1 .grid-protfolio-img {
+    background: url("../clients-proj/sheviolet_website.jpg") center center/cover no-repeat;
 }
 
 .area-2-2 {
     grid-area: area-2-2;
 }
 
+.area-2-2 .grid-protfolio-img {
+    background: url("../clients-proj/e4a_website.jpg") center center/cover no-repeat;
+}
+
 .area-3-1 {
     grid-area: area-3-1;
 }
 
+.area-3-1 .grid-protfolio-img {
+    background: url("../clients-proj/salonadeen.jpg") center center/cover no-repeat;
+}
+
 .area-3-2 {
     grid-area: area-3-2;
+}
+
+.area-3-2 .grid-protfolio-img {
+    background: url("../clients-proj/hokukilo.jpg") center center/cover no-repeat;
+}
+
+
+/* wix landing */
+
+.grid-wix-landing {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "left-1 right-1";
+    grid-gap: 1rem;
+}
+
+.left-1 {
+    grid-area: left-1;
+}
+
+.right-1 {
+    grid-area: right-1;
+}
+
+.left-1 .grid-protfolio-img {
+    background: url("../clients-proj/hokukilo.jpg") center center/cover no-repeat;
+}
+
+.right-1 .grid-protfolio-img {
+    background: url("../clients-proj/hsalman.jpg") center center/cover no-repeat;
 }
