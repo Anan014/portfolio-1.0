@@ -30,3 +30,64 @@
 .article-1 .desc-container {
     padding: 2rem var(--div-padding-sides);
 }
+
+
+/* Wix bus */
+
+.grid-wix-ecommerce {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "area-1-1 area-1-2" "area-2-1 area-2-2" "area-3-1 area-3-2";
+    display: flex;
+}
+
+.area-box {
+    /* width: 356px;
+    height: 217px; */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: dotted 2px var(--border-color);
+}
+
+.area-1-1 {
+    grid-area: area-1-1;
+}
+
+.area-box p {
+    margin-top: 0;
+    line-height: 1rem;
+    color: var(--secondary-text);
+}
+
+.area-1-1 .grid-protfolio-img {
+    background: url("../clients-proj/fireless_website.jpg") center center/cover no-repeat;
+    width: 356px;
+    height: 217px;
+    border-radius: 15px;
+}
+
+.area-1-2 {
+    grid-area: area-1-2;
+}
+
+.area-2-1 {
+    grid-area: area-2-1;
+}
+
+.area-2-2 {
+    grid-area: area-2-2;
+}
+
+.area-3-1 {
+    grid-area: area-3-1;
+}
+
+.area-3-2 {
+    grid-area: area-3-2;
+}
