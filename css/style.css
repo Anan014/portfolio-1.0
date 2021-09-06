@@ -5,10 +5,12 @@
     --primary-text: #f4f4f4;
     --secondary-text: #9b9b9b;
     --container-width-1200: 1200px;
+    --container-width-500: 100%;
     --div-padding-sides: 5rem;
     --btn-radius: 20px;
     --sub-titles-height: 50px;
     --btn-border-color: #007CED;
+    --mobile-font-size: 0.8rem;
 }
 
 
@@ -48,8 +50,8 @@ body::-webkit-scrollbar {
 }
 
 .container {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     width: var(--container-width-1200);
     height: 100%;
     margin: auto;
@@ -152,4 +154,64 @@ body::-webkit-scrollbar {
 .footer p {
     margin: 0;
     padding: 0;
+}
+
+@media (max-width:500px) {
+    body {
+        background: var(--container-color);
+    }
+    .container {
+        padding-top: 0;
+        padding-bottom: 0;
+        width: var(--container-width-500);
+        height: 100%;
+        margin: auto;
+    }
+    /* Nav Bar */
+    .navbar {
+        display: flex;
+        width: 100%;
+        height: auto;
+        background: var(--container-color);
+        backdrop-filter: blur(10px);
+        justify-content: center;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .navbar ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    .navbar ul li {
+        margin: auto;
+        padding: 1rem;
+        font-weight: 500;
+    }
+    .navbar ul li a {
+        color: var(--secondary-text);
+        font-weight: 600;
+        text-decoration: none;
+        transition: color 0.5s ease-out;
+        letter-spacing: 0.1rem;
+    }
+    .navbar ul li a:hover {
+        color: white;
+        /* transition-delay: 0.5s; */
+    }
+    .navbar ul li .current-page {
+        color: white;
+        border-bottom: white 1px solid;
+    }
+    .footer {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border: solid 2px var(--border-color);
+        background: var(--seconed-bacground-color);
+    }
 }
