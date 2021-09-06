@@ -446,6 +446,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            text-align: center;
         }
         
         .grid-facts .facts-box i {
@@ -595,59 +596,76 @@
             }
             /* Clients */
             .grid-clients {
-                grid-template-columns: 1fr;
-                grid-auto-columns: 1fr;
-                grid-template-areas: "clients-1" "clients-2" "clients-3" "clients-4" "clients-5" "clients-6";
-                justify-content: space-between;
-                align-items: center;
-                margin-top: -3rem;
-                flex-direction: column;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                gap: 0px 0px;
+                grid-template-areas: "clients-1 clients-2" "clients-3 clients-4" "clients-5 clients-6";
             }
-            /* .clients-box {
+            .clients-box {
                 width: 200px;
                 height: 200px;
-            } */
+            }
             .clients-1 {
                 width: 150px;
                 height: 150px;
-                margin-top: 2rem;
             }
             .clients-2 {
                 width: 150px;
                 height: 150px;
-                margin-top: -2rem;
-                margin-bottom: -2rem;
             }
             .clients-3 {
                 width: 150px;
                 height: 150px;
-                margin-top: -2rem;
-                margin-bottom: -2rem;
             }
             .clients-4 {
                 width: 150px;
                 height: 150px;
-                margin-top: -2rem;
-                margin-bottom: -2rem;
             }
             .clients-5 {
                 width: 150px;
                 height: 150px;
-                margin-bottom: 1rem;
             }
             .clients-6 {
                 width: 150px;
                 height: 150px;
-                filter: grayscale(100%)
             }
             .grid-facts {
-                grid-template-columns: 1fr;
-                grid-auto-columns: 1fr;
-                grid-template-areas: "facts-1" "facts-2" "facts-3" "facts-4";
-                flex-direction: column;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                gap: 0px 0px;
+                grid-template-areas: "facts-1 facts-2" "facts-3 facts-4";
+                grid-gap: 1rem;
             }
-            .grid-facts .facts-box {
+            /* .grid-facts .facts-box {
                 margin-bottom: 1rem;
+            } */
+            .grid-facts .facts-box h3 {
+                font-size: var(--mobile-font-size);
+            }
+            .grid-facts .facts-box h2 {
+                font-size: 2rem;
+            }
+            .facts-1 {
+                grid-area: facts-1;
+                width: 150px;
+                height: 150px;
+            }
+            .facts-2 {
+                grid-area: facts-2;
+                width: 150px;
+                height: 150px;
+            }
+            .facts-3 {
+                grid-area: facts-3;
+                width: 150px;
+                height: 150px;
+            }
+            .facts-4 {
+                grid-area: facts-4;
+                width: 150px;
+                height: 150px;
             }
             .main-div-box {
                 padding: 1rem;
