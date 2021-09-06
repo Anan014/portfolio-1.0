@@ -395,7 +395,7 @@
         }
         
         .clients-6 {
-            grid-area: clients-5;
+            grid-area: clients-6;
             background: url("../clients/la_mexiano.png")center center/cover;
             width: 120px;
             height: 120px;
@@ -602,17 +602,19 @@
                 gap: 0px 0px;
                 grid-template-areas: "clients-1 clients-2" "clients-3 clients-4" "clients-5 clients-6";
             }
-            .clients-box {
+            /* .clients-box {
                 width: 200px;
                 height: 200px;
-            }
+            } */
             .clients-1 {
                 width: 150px;
                 height: 150px;
+                margin-top: 1rem;
             }
             .clients-2 {
                 width: 150px;
                 height: 150px;
+                margin-top: 1rem;
             }
             .clients-3 {
                 width: 150px;
