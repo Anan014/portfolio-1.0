@@ -28,7 +28,7 @@
 }
 
 .contact-info .desc-container {
-    padding: 2rem var(--div-padding-sides);
+    padding: var(--div-padding-sides);
 }
 
 
@@ -65,4 +65,20 @@
 
 .email-area {
     grid-area: email-area;
+}
+
+@media (max-width:500px) {
+    .contact-info .sub-title {
+        height: var(--sub-titles-height);
+        display: flex;
+        align-items: center;
+        padding-left: var(--div-padding-mobile-sides);
+    }
+    .contact-info .sub-title h2 {
+        border-bottom: var(--btn-border-color) 2px solid;
+        margin-bottom: 4rem;
+    }
+    .contact-info .desc-container {
+        padding: var(--div-padding-mobile-sides);
+    }
 }
