@@ -6,11 +6,11 @@
     background: var(--container-color);
     color: var(--primary-text);
     display: flex;
+    padding: var(--div-padding-sides);
 }
 
 .about-me>div {
-    width: 40%;
-    padding: var(--div-padding-sides);
+    width: 50%;
 }
 
 .about-me .circle-image .circle-img {

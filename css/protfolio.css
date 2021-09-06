@@ -147,3 +147,23 @@
 .right-1 .grid-protfolio-img {
     background: url("../clients-proj/hsalman.jpg") center center/cover no-repeat;
 }
+
+
+/* wordpress ecommerce */
+
+.grid-wordpress-ecommerce {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "wordpress-ecommerce-1-1";
+}
+
+.wordpress-ecommerce-1-1 {
+    grid-area: wordpress-ecommerce-1-1;
+}
+
+.wordpress-ecommerce-1-1 .grid-protfolio-img {
+    background: url("../clients-proj/camerapixel.jpg") center center/cover no-repeat;
+}
