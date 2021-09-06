@@ -169,7 +169,7 @@ body::-webkit-scrollbar {
     .container {
         padding-top: 0;
         padding-bottom: 0;
-        width: var(--container-width-500);
+        width: auto;
         height: 100%;
         margin: auto;
     }

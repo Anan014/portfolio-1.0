@@ -167,3 +167,49 @@
 .wordpress-ecommerce-1-1 .grid-protfolio-img {
     background: url("../clients-proj/camerapixel.jpg") center center/cover no-repeat;
 }
+
+@media (max-width:500px) {
+    .article-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .grid-wix-ecommerce {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "area-1-1" "area-1-2" "area-2-1" "area-2-2" "area-3-1" "area-3-2";
+        grid-gap: 1rem;
+    }
+    .grid-wix-landing {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "left-1" "right-1";
+        grid-gap: 1rem;
+    }
+    .area-box {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 2rem;
+    }
+    .area-box p {
+        line-height: 1rem;
+        width: 340px;
+    }
+    .grid-protfolio-img {
+        width: 340px;
+        height: 217px;
+    }
+    .article-1 .sub-title {
+        height: var(--sub-titles-height);
+        display: flex;
+        align-items: center;
+        padding-left: var(--div-padding-mobile-sides);
+    }
+    .article-1 .sub-title h2 {
+        font-size: 1rem;
+        border-bottom: var(--btn-border-color) 2px solid;
+    }
+    .article-1 .desc-container {
+        padding: var(--div-padding-mobile-sides);
+    }
+}
