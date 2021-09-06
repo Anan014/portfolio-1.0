@@ -46,7 +46,7 @@ body {
     grid-auto-flow: row;
     grid-template-areas: /*"date-date-1 date-desc-1"*/
     "date-date-2 date-desc-2" "date-date-3 date-desc-3" "date-date-4 date-desc-4" "date-date-5 date-desc-5";
-    padding: 2rem var(--div-padding-sides);
+    padding: var(--div-padding-sides);
 }
 
 .date-date-box {
@@ -131,7 +131,7 @@ body {
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas: "date-edu-1 desc-edu-1" "date-edu-2 desc-edu-2" "date-edu-3 desc-edu-3" "date-edu-4 desc-edu-4" "date-edu-5 desc-edu-5" "date-edu-6 desc-edu-6";
-    padding: 2rem var(--div-padding-sides);
+    padding: var(--div-padding-sides);
 }
 
 .date-edu-1 {
@@ -187,6 +187,12 @@ body {
 
 /* TimeLine end */
 
+.desc-container {
+    padding-right: var(--div-padding-sides);
+    padding-left: var(--div-padding-sides);
+    padding-top: 1.5rem;
+}
+
 .coding_skills {
     width: 100%;
     height: auto;
@@ -194,10 +200,6 @@ body {
     margin: 0;
     padding: 0;
     color: var(--primary-text);
-}
-
-.coding_skills .desc-container {
-    padding: 2rem var(--div-padding-sides);
 }
 
 
@@ -265,10 +267,6 @@ body {
     color: var(--primary-text);
 }
 
-.design_skills .desc-container {
-    padding: 2rem var(--div-padding-sides);
-}
-
 
 /* skills */
 
@@ -300,4 +298,25 @@ body {
     width: 80%;
     background-color: var(--btn-border-color);
     border-radius: 20px;
+}
+
+@media (max-width: 500px) {
+    .sub-title {
+        padding-left: var(--div-padding-mobile-sides);
+        padding-bottom: var(--div-padding-mobile-sides);
+    }
+    .grid-timeline {
+        grid-template-columns: 0.5fr 2fr;
+        padding: var(--div-padding-mobile-sides);
+    }
+    .grid-education {
+        grid-template-columns: 0.5fr 2fr;
+        padding: var(--div-padding-mobile-sides);
+    }
+    .desc-container {
+        padding-right: var(--div-padding-mobile-sides);
+        padding-left: var(--div-padding-mobile-sides);
+        padding-top: 1rem;
+        padding-bottom: 3rem;
+    }
 }

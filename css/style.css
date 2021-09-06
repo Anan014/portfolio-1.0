@@ -7,6 +7,7 @@
     --container-width-1200: 1200px;
     --container-width-500: 100%;
     --div-padding-sides: 5rem;
+    --div-padding-mobile-sides: 1rem;
     --btn-radius: 20px;
     --sub-titles-height: 50px;
     --btn-border-color: #007CED;
@@ -118,7 +119,6 @@ body::-webkit-scrollbar {
 }
 
 .page-title>div {
-    /* padding: 1rem; */
     width: 100%;
     border: solid 2px var(--border-color);
     z-index: 100;
@@ -159,6 +159,12 @@ body::-webkit-scrollbar {
 @media (max-width:500px) {
     body {
         background: var(--container-color);
+    }
+    .page-title {
+        font-size: 0.8rem;
+    }
+    .page-title>div {
+        padding: 0.5rem;
     }
     .container {
         padding-top: 0;

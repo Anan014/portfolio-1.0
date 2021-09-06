@@ -664,30 +664,30 @@
                 height: 150px;
             }
             .main-div-box {
-                padding: 1rem;
+                padding: var(--div-padding-mobile-sides);
             }
             .desc-container {
-                padding: 1rem;
+                padding: var(--div-padding-mobile-sides);
             }
             .what-i-do .sub-title {
-                padding: 1rem;
+                padding: var(--div-padding-mobile-sides);
             }
             .testimonials .sub-title {
-                padding: 1rem;
+                padding: var(--div-padding-mobile-sides);
             }
             .testimonials .desc-container {
-                padding: 1rem;
+                padding: var(--div-padding-mobile-sides);
             }
             .clients .sub-title {
-                padding: 1rem;
+                padding: var(--div-padding-mobile-sides);
             }
             .clients .desc-container {
-                padding: 1rem;
+                padding: var(--div-padding-mobile-sides);
             }
             .fun_facts .sub-title {
-                padding: 1rem;
+                padding: var(--div-padding-mobile-sides);
             }
             .fun_facts .desc-container {
-                padding: 1rem;
+                padding: var(--div-padding-mobile-sides);
             }
         }
