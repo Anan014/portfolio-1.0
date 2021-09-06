@@ -532,9 +532,6 @@
             .about-me .about-me-desc p {
                 font-size: var(--mobile-font-size);
             }
-            .about-me .about-me-desc .about-me-text {
-                /* margin-bottom: 20px; */
-            }
             .about-me .about-me-desc .btn {
                 flex-direction: column;
                 text-align: center;
@@ -554,9 +551,6 @@
             }
             .what-i-do .what-i-do-box h3 {
                 font-size: 0.9rem;
-            }
-            .what-i-do .desc-container {
-                /* padding: 2rem var(--div-padding-sides); */
             }
             .what-i-do p {
                 margin: 0;
@@ -609,12 +603,12 @@
             .clients-1 {
                 width: 150px;
                 height: 150px;
-                margin-top: 1rem;
+                margin-top: 2rem;
             }
             .clients-2 {
                 width: 150px;
                 height: 150px;
-                margin-top: 1rem;
+                margin-top: 2rem;
             }
             .clients-3 {
                 width: 150px;
