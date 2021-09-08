@@ -96,6 +96,24 @@ body::-webkit-scrollbar {
 }
 
 
+/* -----------------------addition------------------------ */
+
+
+/* .menu-wrap .toggler:checked~.hamburger { */
+
+
+/* position: fixed; */
+
+
+/* margin-left: 18.8vw; */
+
+
+/* background-color: transparent; */
+
+
+/* } */
+
+
 /* Hamburger Line */
 
 .menu-wrap .hamburger>div {
@@ -161,6 +179,11 @@ body::-webkit-scrollbar {
     visibility: visible;
 }
 
+
+/* .menu-wrap .toggler:checked {
+    overflow: hidden;
+} */
+
 .menu-wrap .toggler:checked~.menu>div {
     transform: scale(1);
     transition-duration: var(--menu-speed);
@@ -186,7 +209,7 @@ body::-webkit-scrollbar {
 
 .menu-wrap .menu>div {
     background: var(--seconed-bacground-color);
-    width: 300vh;
+    width: 1200px;
     height: 300vw;
     display: flex;
     flex: none;
@@ -313,8 +336,8 @@ body::-webkit-scrollbar {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    /* border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px; */
     border: solid 2px var(--border-color);
     background: var(--seconed-bacground-color);
 }
@@ -332,9 +355,9 @@ body::-webkit-scrollbar {
     body {
         background: var(--container-color);
     }
-    .menu-wrap .hamburger {
+    /* .menu-wrap .hamburger {
         position: fixed;
-    }
+    } */
     .page-title {
         font-size: 0.8rem;
     }
