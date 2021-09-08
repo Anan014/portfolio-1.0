@@ -37,10 +37,10 @@
 .grid-contact {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "phone-area" "location-area" "email-area";
+    grid-template-areas: "phone-area" "location-area" "email-area" " github-area" "linkedin-area";
 }
 
 .contact-box {
@@ -65,6 +65,14 @@
 
 .email-area {
     grid-area: email-area;
+}
+
+.github-area {
+    grid-area: github-area;
+}
+
+.linkedin-area {
+    grid-area: linkedin-area;
 }
 
 @media (max-width:500px) {
