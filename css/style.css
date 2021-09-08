@@ -185,9 +185,9 @@ body::-webkit-scrollbar {
 }
 
 .menu-wrap .menu>div {
-    background: green;
-    width: 250vh;
-    height: 250vw;
+    background: var(--seconed-bacground-color);
+    width: 300vh;
+    height: 300vw;
     display: flex;
     flex: none;
     align-items: center;
@@ -202,6 +202,10 @@ body::-webkit-scrollbar {
     max-height: 100vh;
     opacity: 0;
     transition: opacity 0.4s ease;
+}
+
+.menu-wrap .menu>div>div>ul {
+    padding: 0;
 }
 
 .menu-wrap .menu>div>div>ul>li {
@@ -327,6 +331,9 @@ body::-webkit-scrollbar {
 @media (max-width:500px) {
     body {
         background: var(--container-color);
+    }
+    .menu-wrap .hamburger {
+        position: fixed;
     }
     .page-title {
         font-size: 0.8rem;
